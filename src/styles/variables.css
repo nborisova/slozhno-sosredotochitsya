@@ -4,7 +4,13 @@
 */
 
 :root {
-  /* --accent-header-title-color: #DB00FF;
+  --background-color: #000028;
   --accent-color: #FF0070;
-  --title-decor: #FF0070; */
+  --primary-color: var(--accent-color);
+  --card-title-color: #000028;
+  --card-text-color: #F1B2CE;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
 }
