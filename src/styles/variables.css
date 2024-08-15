@@ -7,9 +7,14 @@
   --background-color: #000028;
   --accent-color: #FF0070;
   --primary-color: var(--accent-color);
+  --header-title-color: #DB00FF;
   --card-title-color: #000028;
   --card-text-color: #F1B2CE;
-  --font-family: 'IBM Plex Mono', sans-serif;
-  /* --font-size: 18px;
-  --inset-inline: cacl(100% - 20px); */
+  --font-family: 'IBM Plex mono', sans-serif;
+  /* --font-size: 18px; */
+  --inline-page-padding: 10px;
+  --block-page-padding: 10px;
+  --title-shadow-color: #FF0070;
+  --link-shadow-color: #FF0070;
+
 }
