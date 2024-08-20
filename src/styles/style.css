@@ -27,10 +27,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 25px;
-  height: 25px;
-  border-inline-end: 1px solid #FF0070;
-  border-block-start: 1px solid #FF0070;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--decor-elements-color);
+  border-block-start: 1px solid var(--decor-elements-color);
 }
 
 .header::before {
@@ -38,10 +38,10 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 25px;
-  height: 25px;
-  border-inline-start: 1px solid #FF0070;
-  border-block-end: 1px solid #FF0070;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--decor-elements-color);
+  border-block-end: 1px solid var(--decor-elements-color);
 }
 
 .header__rec {
@@ -49,7 +49,7 @@
   justify-self: end;
   margin-inline-end: 25px;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--decor-elements-color);
   font-size: 18px;
   line-height: 1.4;
   font-weight: 400;
@@ -62,14 +62,14 @@
   block-size: 9px;
   top: 7px;
   right: -17px;
-  background-color: var(--primary-color);
+  background-color: var(--decor-elements-color);
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px #FF0070;
+  box-shadow: 0 0 4px 2px var(--decor-elements-color);
 }
 
 .header__theme-menu {
   justify-self: end;
-  color: var(--primary-color);
+  color: var(--button-theme-color);
   margin-block-start: 43px;
 }
 
@@ -96,7 +96,7 @@
 /* НЕ РАБОТАЕТ */
 
 .header__theme-menu-button:checked {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--button-theme-color);
 }
 
 .header__title {
@@ -104,17 +104,30 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.82;
   color: var(--header-title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--header-shadow-color);
   margin-block-start: 80px;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
 }
 
 .header__text {
   margin-block-start: 55px;
-  /* font-family: var(--font-family); */
+  font-family: var(--font-family);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
   margin-block-end: 66px;
 /* text-align: left; */
+}
+
+.section__title {
+  color: var(--section-title-color);
+}
+
+.section__article-title {
+  color: var(--card-title-color);
+}
+
+.section__article-text {
+  color: var(--card-text-color);
+  font-weight: 400;
 }
