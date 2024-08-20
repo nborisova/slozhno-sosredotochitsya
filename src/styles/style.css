@@ -18,11 +18,14 @@
 
 .header {
   display: grid;
-  position: relative;
   margin-block-end: 40px;
 }
 
-.header::after {
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after {
   content: "";
   position: absolute;
   top: 0;
@@ -33,7 +36,7 @@
   border-block-start: 1px solid var(--decor-elements-color);
 }
 
-.header::before {
+.decorated-zone::before  {
   content: "";
   position: absolute;
   bottom: 0;
@@ -130,4 +133,11 @@
 .section__article-text {
   color: var(--card-text-color);
   font-weight: 400;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.82;
+  color: var(--header-title-color);
+  text-shadow: 4px 4px 0 var(--header-shadow-color);
 }
