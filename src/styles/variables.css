@@ -4,11 +4,7 @@
 */
 
 :root {
-  --font-family: 'IBM Plex mono', sans-serif;
-  --inline-page-padding: 10px;
-  --block-page-padding: 10px;
   --background-color: #000028;
-
   --decor-elements-color: #FF0070;
   --accent-color: #FF0070;
   --button-theme-color: #FF0070; 
@@ -17,24 +13,14 @@
   --section-title-color: #FF0070;
   --card-title-color: #000028;
   --card-text-color: #F1B2CE;
-
-
-  /* --accent-color: #FF0070;
-  --primary-color: var(--accent-color);
-  --header-title-color: #DB00FF;
-  --card-title-color: #000028;
-  --card-text-color: #F1B2CE;
-  --title-shadow-color: #FF0070;
-  --link-shadow-color: #FF0070; */
+  --link-shadow-color: #FF0070;
+  --inline-page-padding: 10px;
+  --inline-block-padding: 10px;
 }
 
 /* 
+
 мб еще нужно сделать стили для фоновой картинки, чтобы сбросить отспупы (100% + 20px) и сдвинуть в сторону
 добавить ширину шрифта и удалить из переменной фонт фэмили
-
-поменять на эти свойства
-
-
---link-shadow-color: #FF0070;
 
 */
