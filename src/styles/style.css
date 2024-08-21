@@ -99,12 +99,13 @@
   font-weight: 400;
   line-height: 1;
   text-align: center;
+  cursor: pointer;
 }
 
 /* НЕ РАБОТАЕТ */
 
 .header__theme-menu-button:checked {
-  border: 1px solid var(--button-theme-color);
+  border: 1px solid var(--accent-color);
 }
 
 .header__title {
@@ -154,6 +155,11 @@
   color: var(--card-text-color);
   font-weight: 400;
   line-height: 1.3;
+}
+
+.section__article-link {
+  text-underline-offset: 8%;
+  text-shadow: 2px 2px 0 var(--link-shadow-color);
 }
 
 .section__container {
