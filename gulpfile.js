@@ -69,7 +69,7 @@ function images() {
 }
 
 function fonts() {
-  return gulp.src('src/fonts/**/*')
+  return gulp.src('src/fonts/**/*', { encoding: false })
             .pipe(gulp.dest('dist/fonts'))
             .pipe(browserSync.reload({stream: true}));
 }
