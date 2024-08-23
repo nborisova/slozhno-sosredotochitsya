@@ -5,6 +5,7 @@
 
 :root {
   --background-color: #000028;
+  --background-image: url(./images/cover-image-dark.png);
   --decor-elements-color: #FF0070;
   --accent-color: #FF0070;
   --button-theme-color: #FF0070; 
