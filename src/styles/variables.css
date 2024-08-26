@@ -11,6 +11,7 @@
   --button-theme-color: #FF0070; 
   --header-title-color: #DB00FF;
   --header-shadow-color: #FF0070;
+  --header-text-color: #000028;
   --section-title-color: #FF0070;
   --card-title-color: #000028;
   --card-text-color: #F1B2CE;
@@ -20,10 +21,7 @@
 }
 
 /* 
-
-
 добавить ширину шрифта и удалить из переменной фонт фэмили
-
 */
 
 @media (min-width: 750px) {
@@ -33,3 +31,67 @@
     --inline-block-padding: 20px;
   }
 }
+
+
+@media (prefers-color-scheme: light) {
+
+  .page {
+    --background-color: #FFF1F7;
+    --background-image: url(./images/cover-image-light.png);
+    --decor-elements-color: #353430;
+    --accent-color: #FF8DCB;
+    --button-theme-color: #353430; 
+    --header-title-color: #FFC2E6;
+    --header-shadow-color: #FF0070;
+    --header-text-color: #353430;
+    --section-title-color: #353430;
+    --card-title-color: #353430;
+    --card-text-color: #353430;
+    --link-shadow-color: #FF8DCB;
+  }
+
+  .page a {
+    text-decoration: none;
+  }
+  
+  .page .header__rec {
+    display: none;
+  }
+  
+  .page .header__theme-menu {
+    align-self: end;
+  }
+  
+  @media (min-width: 750px) {
+  
+    .page {
+      --header-shadow-color: #FF8DCB;
+    }
+  }
+  
+  @media (min-width: 950px) {
+  
+    .page .header__theme-menu {
+      align-self: start;
+    }
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .page {
+    --background-color: #000028;
+    --background-image: url(./images/cover-image-dark.png);
+    --decor-elements-color: #FF0070;
+    --accent-color: #FF0070;
+    --button-theme-color: #FF0070; 
+    --header-title-color: #DB00FF;
+    --header-shadow-color: #FF0070;
+    --header-text-color: #000028;
+    --section-title-color: #FF0070;
+    --card-title-color: #000028;
+    --card-text-color: #F1B2CE;
+    --link-shadow-color: #FF0070;
+  }
+} 
