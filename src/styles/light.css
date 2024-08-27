@@ -23,10 +23,6 @@
   --link-shadow-color: #FF8DCB;
 }
 
-.page.theme_light a {
-  text-decoration: none;
-}
-
 .page.theme_light .header__rec {
   display: none;
 }
@@ -65,10 +61,6 @@
   --inline-page-padding: 10px;
   --inline-block-padding: 10px;
 }
-
-/* 
-добавить ширину шрифта и удалить из переменной фонт фэмили
-*/
 
 @media (min-width: 750px) {
 

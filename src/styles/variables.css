@@ -50,10 +50,6 @@
     --link-shadow-color: #FF8DCB;
   }
 
-  .page a {
-    text-decoration: none;
-  }
-  
   .page .header__rec {
     display: none;
   }

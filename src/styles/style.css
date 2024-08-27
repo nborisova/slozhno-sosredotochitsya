@@ -161,8 +161,12 @@
 }
 
 .section__article-link {
-  text-underline-offset: 8%;
   text-shadow: 2px 2px 0 var(--link-shadow-color);
+  text-decoration: none;
+}
+
+.section__article-link:hover {
+  text-decoration: underline;
 }
 
 .section__container {
